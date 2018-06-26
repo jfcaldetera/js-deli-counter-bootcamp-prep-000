@@ -33,6 +33,8 @@ function currentLine(katzDeliLine)
       line += `${i + 1}. ${katzDeliLine[i]}, `
     }
 
-    return ("The line is currently: " + line)
+    line = "The line is currently: " + line.substring(0, -1)
+    
+    return line
   }
 }
