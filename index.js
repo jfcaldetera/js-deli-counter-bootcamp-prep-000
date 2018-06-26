@@ -27,14 +27,11 @@ function currentLine(katzDeliLine)
   }
   else
   {
-    var line = ""
-    for (var i = 0; i < katzDeliLine.length; i++)
-    {
-      line += `${i + 1}. ${katzDeliLine[i]}, `
-    }
-
-    var res = "The line is currently: " + line.substring(0, -1)
-
-    return res
+    var line = "The line is currently:";
+	katzDeliLine.forEach(function(val,index){
+	    line += ` ${index+1}. ${katzDeliLine[index]}`;
+	    if (index < katzDeliLine.length - 1){ line += ',';}
+	});
+	return line;
   }
 }
