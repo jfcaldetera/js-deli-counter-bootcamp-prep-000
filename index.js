@@ -35,6 +35,6 @@ function currentLine(katzDeliLine)
 
     line = line.substring(0, -1)
 
-    return ("The line is currently: " + res)
+    return ("The line is currently: " + line)
   }
 }
