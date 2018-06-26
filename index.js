@@ -30,10 +30,9 @@ function currentLine(katzDeliLine)
     var line = ""
     for (var i = 0; i < katzDeliLine.length; i++)
     {
-      line += `${name}. ${katzDeliLine[i]}, '
-
+      line += `${name}. ${katzDeliLine[i]},`
     }
 
-
+    return ("The line is currently: " + line)
   }
 }
